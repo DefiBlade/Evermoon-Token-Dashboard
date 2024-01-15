@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.content-block {
+  padding: 39px 45px;
+  background: #040713;
+  border-radius: 25px;
+  gap: 29px
+}
+
+.content-block--token {
+  gap: 5px !important;
+  background: rgba(4, 7, 19, .8) !important
+}
+.content-block--transparent {
+  padding: 0;
+  background: transparent !important
+}
+
+.content-block--gradient:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 25px;
+  border-bottom: 2px solid transparent;
+  background: linear-gradient(90deg, #1992b8 1.57%, #23e5c3 59.44%) border-box;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude
+}
+
+.dashboard-block {
+  position: relative;
+  padding: 15px 25px;
+  background: #050713;
+  border-radius: 15px
+}
+
+.dashboard-block--nopadding {
+  padding: 0 !important
+}
+
+.dashboard-block--gradient:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 15px;
+  border: 1px solid transparent;
+  background: linear-gradient(90deg, #1992b8 1.57%, #23e5c3 59.44%) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude
+}
+.button {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  border-radius: 15px;
+  gap: 10px
+}
+.global-block {
+  position: relative;
+  background: #050713;
+  border-radius: 16px
+}
+
+.global-block:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 16px;
+  border-bottom: 1px solid transparent;
+  background: linear-gradient(90deg, #1992b8 1.57%, #23e5c3 59.44%) border-box;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude
+}
